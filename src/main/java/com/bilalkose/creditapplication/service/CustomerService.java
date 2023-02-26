@@ -2,6 +2,7 @@ package com.bilalkose.creditapplication.service;
 
 import com.bilalkose.creditapplication.dto.CustomerDto;
 import com.bilalkose.creditapplication.dto.request.CreateCustomerRequest;
+import com.bilalkose.creditapplication.dto.request.GetCustomerCreditApplicationRequest;
 import com.bilalkose.creditapplication.model.Customer;
 
 public interface CustomerService {
@@ -12,4 +13,6 @@ public interface CustomerService {
 
     Customer getByIdForBusiness(Long id);
     void delete(Long id);
+
+    CustomerDto getCustomerByCitizenshipNumberAndBirthDate(GetCustomerCreditApplicationRequest getCustomerCreditApplicationRequest);
 }

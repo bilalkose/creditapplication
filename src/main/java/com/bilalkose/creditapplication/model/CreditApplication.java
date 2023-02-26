@@ -1,6 +1,7 @@
 package com.bilalkose.creditapplication.model;
 
 import com.bilalkose.creditapplication.enums.CreditApplicationResult;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

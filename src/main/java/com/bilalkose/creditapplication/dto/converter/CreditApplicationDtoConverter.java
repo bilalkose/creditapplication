@@ -12,12 +12,7 @@ public class CreditApplicationDtoConverter {
         this.customerDtoConverter = customerDtoConverter;
     }
 
-    public CreditApplicationDto convert (CreditApplication from){
-        return new CreditApplicationDto(
-                from.getId(),
-                from.getCreationTime(),
-                customerDtoConverter.convert(from.getCustomer())
-        );
-
+    public CreditApplicationDto convert(CreditApplication from) {
+        return new CreditApplicationDto(from.getId(), from.getCreationTime(), from.getCreditApplicationResult(), from.getCreditAmount(), from.getCustomer().getId());
     }
 }

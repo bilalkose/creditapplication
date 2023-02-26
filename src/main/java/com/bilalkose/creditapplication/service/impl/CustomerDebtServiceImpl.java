@@ -5,12 +5,14 @@ import com.bilalkose.creditapplication.model.CustomerDebt;
 import com.bilalkose.creditapplication.repository.CustomerDebtRepository;
 import com.bilalkose.creditapplication.service.CustomerDebtService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class CustomerDebtServiceImpl implements CustomerDebtService {
 
     private final CustomerDebtRepository customerDebtRepository;

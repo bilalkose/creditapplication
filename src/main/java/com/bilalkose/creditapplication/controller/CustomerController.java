@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/v1/customer")
+@CrossOrigin("*")
 @RequiredArgsConstructor
 public class CustomerController {
     private final CustomerService customerService;
@@ -22,7 +23,7 @@ public class CustomerController {
     }
 
     @PostMapping
-    public void createCustomer(@RequestBody @Valid CreateCustomerRequest createCustomerRequest) {
-        this.customerService.save(createCustomerRequest);
+    public ResponseEntity<?> createCustomer(@RequestBody @Valid CreateCustomerRequest createCustomerRequest) {
+        return ResponseEntity.ok(this.customerService.save(createCustomerRequest));
     }
 }
