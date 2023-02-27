@@ -2,10 +2,7 @@ package com.bilalkose.creditapplication.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -36,18 +33,4 @@ public class Customer {
     @OneToMany(mappedBy = "customer")
     @JsonManagedReference
     private List<CustomerDebt> customerDebts;
-
-    @Override
-    public String toString() {
-        return "Customer{" +
-                "id='" + id + '\'' +
-                ", citizenshipNumber='" + citizenshipNumber + '\'' +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", monthlyIncome=" + monthlyIncome +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", birthday=" + birthday +
-                ", creditApplicationSet=" + creditApplications +
-                '}';
-    }
 }

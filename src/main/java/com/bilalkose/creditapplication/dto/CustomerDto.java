@@ -1,9 +1,7 @@
 package com.bilalkose.creditapplication.dto;
 
 import com.bilalkose.creditapplication.model.CustomerDebt;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -11,6 +9,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class CustomerDto {
     private Long id;
     private String citizenshipNumber;
@@ -20,6 +19,5 @@ public class CustomerDto {
     private String phoneNumber;
     private LocalDate birthday; //localdatetime olacak
     private int creditScore;
-
     private List<CustomerDebt> customerDebts;
 }

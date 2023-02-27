@@ -36,4 +36,5 @@ public class CustomerDtoConverter {
     public Customer convert(CreateCustomerRequest from) {
         return Customer.builder().name(from.getName()).surname(from.getSurname()).phoneNumber(from.getPhoneNumber()).citizenshipNumber(from.getCitizenshipNumber()).monthlyIncome(from.getMonthlyIncome()).birthday(from.getBirthday()).build();
     }
+
 }

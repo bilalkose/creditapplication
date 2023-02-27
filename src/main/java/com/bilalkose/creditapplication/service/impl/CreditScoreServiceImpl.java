@@ -5,6 +5,7 @@ import com.bilalkose.creditapplication.model.Customer;
 import com.bilalkose.creditapplication.model.CustomerDebt;
 import com.bilalkose.creditapplication.service.CreditScoreService;
 import com.bilalkose.creditapplication.service.CustomerService;
+import lombok.EqualsAndHashCode;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 

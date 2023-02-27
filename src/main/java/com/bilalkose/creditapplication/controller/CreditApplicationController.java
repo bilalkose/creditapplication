@@ -1,8 +1,6 @@
 package com.bilalkose.creditapplication.controller;
-
 import com.bilalkose.creditapplication.dto.CreditApplicationDto;
 import com.bilalkose.creditapplication.dto.CreditApplicationResultDto;
-import com.bilalkose.creditapplication.dto.request.CreateCustomerRequest;
 import com.bilalkose.creditapplication.dto.request.GetCustomerCreditApplicationRequest;
 import com.bilalkose.creditapplication.service.CreditApplicationService;
 import com.bilalkose.creditapplication.service.impl.CreditApplicationServiceImpl;
