@@ -15,9 +15,9 @@ Application developed for a *credit application* system. An application has been
 * [Github]()
 
 ## Outputs
-![maven-output](src/main/resources/img/swagger-demo.png "Swagger")
+![swagger](src/main/resources/img/swagger-demo.png "Swagger")
 
-![maven-output](src/main/resources/img/frontend-demo1.png "Front-end Output 1")
+![frontend-1](src/main/resources/img/frontend-demo1.png "Front-end Output 1")
 
-![maven-output](src/main/resources/img/frontend-demo2.png "Front-end Output 2")
+![frontend-2](src/main/resources/img/frontend-demo2.png "Front-end Output 2")
 
